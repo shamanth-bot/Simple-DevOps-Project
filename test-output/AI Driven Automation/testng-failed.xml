@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="2" name="Failed suite [AI Driven Automation]" parallel="tests">
+  <test thread-count="2" verbose="2" name="Auto_LoginQuote_firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.sample.testPackage.LoginReg">
+        <methods>
+          <include name="BeforeMethod"/>
+          <include name="AfterMethod"/>
+          <include name="LoginQuote_1"/>
+          <include name="BeforeSuite"/>
+        </methods>
+      </class> <!-- com.sample.testPackage.LoginReg -->
+    </classes>
+  </test> <!-- Auto_LoginQuote_firefox(failed) -->
+  <test thread-count="2" verbose="2" name="Auto_LoginQuote_1_chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.sample.testPackage.LoginReg">
+        <methods>
+          <include name="BeforeMethod"/>
+          <include name="AfterMethod"/>
+          <include name="LoginQuote_1"/>
+          <include name="BeforeSuite"/>
+        </methods>
+      </class> <!-- com.sample.testPackage.LoginReg -->
+    </classes>
+  </test> <!-- Auto_LoginQuote_1_chrome(failed) -->
+  <test thread-count="2" verbose="2" name="Auto_LoginQuote_1_firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.sample.testPackage.LoginReg">
+        <methods>
+          <include name="BeforeMethod"/>
+          <include name="AfterMethod"/>
+          <include name="LoginQuote_1"/>
+          <include name="BeforeSuite"/>
+        </methods>
+      </class> <!-- com.sample.testPackage.LoginReg -->
+    </classes>
+  </test> <!-- Auto_LoginQuote_1_firefox(failed) -->
+</suite> <!-- Failed suite [AI Driven Automation] -->

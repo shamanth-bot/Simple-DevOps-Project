@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Regression full suite" parallel="tests" thread-count="2">
+
+<!--  <test name ="Auto">
+ <classes>
+  <class name ="com.sample.testPackage.AutoReg">
+  </class>
+ </classes>
+</test>-->
+
+<listeners>
+<listener class-name="com.sample.ng.ReportListeners"></listener>
+</listeners>
+
+<test name ="Autochrome">
+
+ <classes>
+ <parameter name="browser" value="chrome"></parameter>
+ 
+  <class name ="com.sample.testPackage.LoginRegTest">
+  <methods>
+        <include name="E2E_AutoNBTransaction" />
+      </methods>
+ 
+  </class>
+ </classes>
+</test>
+
+
+<test name ="Autochrom1e">
+
+ <classes>
+ <parameter name="browser" value="chrome"></parameter>
+ 
+  <class name ="com.sample.testPackage.LoginRegTest">
+  <methods>
+        <include name="E2E_AutoNBTransaction_Negative" />
+      </methods>
+ 
+  </class>
+ </classes>
+</test>
+ 
+<!-- <test name ="Auto1">
+ <classes>
+  <class name ="com.sample.testPackage.LoginReg2">
+  </class>
+ </classes>
+</test> -->
+
+
+</suite>

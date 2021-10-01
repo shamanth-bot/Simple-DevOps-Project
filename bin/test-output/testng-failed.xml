@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Regression full suite]">
+  <listeners>
+    <listener class-name="com.sample.ng.ReportListeners"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Autochrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.sample.testPackage.LoginRegTest">
+        <methods>
+          <include name="E2E_AutoNBTransaction" invocation-numbers="0"/>
+          <include name="BeforeMethod"/>
+          <include name="AfterMethod"/>
+          <include name="BeforeSuite"/>
+        </methods>
+      </class> <!-- com.sample.testPackage.LoginRegTest -->
+    </classes>
+  </test> <!-- Autochrome(failed) -->
+</suite> <!-- Failed suite [Regression full suite] -->

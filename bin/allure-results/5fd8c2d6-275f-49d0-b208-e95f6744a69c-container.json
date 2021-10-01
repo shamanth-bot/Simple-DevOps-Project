@@ -1,0 +1,1 @@
+{"uuid":"5fd8c2d6-275f-49d0-b208-e95f6744a69c","name":"Regression full suite","children":["156afd57-c4f6-431e-a083-f279af0044b0"],"befores":[{"name":"BeforeSuite","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1604858826261,"stop":1604858857272}],"afters":[],"links":[],"start":1604858826024,"stop":1604858859470}
